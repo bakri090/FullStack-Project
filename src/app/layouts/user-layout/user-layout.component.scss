@@ -1,0 +1,44 @@
+// .userLayout{
+//   display: flex;
+//   flex-direction: column;
+//   min-height: 100vh;
+// }
+// aside{
+//   background-color: #000;
+//   height: inherit;
+// }
+.container {
+    display: grid;
+    grid-template-areas: "aside main";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 250px 1fr;
+    min-height: 100vh;
+    margin: 0 20px;
+}
+
+nav {
+    grid-area: nav;
+    color: white;
+    padding: 1rem;
+}
+
+aside {
+    grid-area: aside;
+    background: #393E46;
+    padding: 1rem;
+    color: #DFD0B8;
+    min-height: inherit;
+    border-radius: 10px;
+}
+
+main {
+    grid-area: main;
+    padding: 1rem;
+}
+
+footer {
+    grid-area: footer;
+    background: #333;
+    color: white;
+    padding: 1rem;
+}

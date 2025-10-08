@@ -1,0 +1,223 @@
+<section>
+  <div class="container">
+    <h1 class="text-center uppercase" i18n>register form</h1>
+    <form [formGroup]="register" (ngSubmit)="submit()">
+      <div class="firstName">
+        <div class="field">
+          <label for="firstName" i18n>first name: </label>
+          <input pInputText type="text" id="firstName" [autofocus]="true" pAutoFocus  formControlName="firstName">
+        </div>
+          <ng-container *ngIf="firstName.touched">
+            <ng-container *ngIf="firstName.getError('required')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error' ,
+                  summary:Summary, detail: requiredError
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+            <ng-container *ngIf="firstName.getError('minlength')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:Summary, detail: minlenthError
+                }
+              ]"
+              [enableService]="false"
+              [closable]="true" />
+            </ng-container>
+            <ng-container *ngIf="firstName.getError('pattern')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:Summary, detail: charsOnly
+                }
+              ]"
+              [enableService]="false"
+              [closable]="true" />
+            </ng-container>
+          </ng-container>
+      </div>
+      <div class="lastName">
+        <div class="field">
+          <label for="lastName" i18n>last name: </label>
+          <input pInputText type="text" id="lastName" formControlName="lastName">
+        </div>
+        <ng-container *ngIf="lastName.touched">
+            <ng-container *ngIf="lastName.getError('required')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:Summary, detail: requiredError
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+            <ng-container *ngIf="lastName.getError('minlength')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:Summary, detail: minlenthError
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+            <ng-container *ngIf="lastName.getError('pattern')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:Summary, detail: charsOnly
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+          </ng-container>
+      </div>
+      <div class="email">
+        <div class="field">
+          <label for="email" i18n>email: </label>
+          <input pInputText type="text" id="email" formControlName="email">
+        </div>
+        <ng-container *ngIf="email.touched">
+            <ng-container *ngIf="email.getError('required')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:Summary, detail: requiredError
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+            <ng-container *ngIf="email.getError('email')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:Summary, detail: EmailError
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+          </ng-container>
+      </div>
+      <div class="userName">
+      <div class="field">
+        <label for="userName" i18n>user name: </label>
+        <input pInputText type="text"  id="userName"  formControlName="userName">
+      </div>
+      <ng-container *ngIf="userName.touched">
+            <ng-container *ngIf="userName.getError('required')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:Summary, detail: requiredError
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+            <ng-container *ngIf="userName.getError('minlength')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:Summary, detail: minlenthError
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+          </ng-container>
+    </div>
+    <div class="password">
+      <div class="field">
+        <label for="password" i18n>password: </label>
+          <input pInputText type="password" id="password" formControlName="password">
+      </div>
+      <ng-container *ngIf="password.touched">
+            <ng-container *ngIf="password.getError('required')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:Summary, detail: requiredError
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+            <ng-container *ngIf="password.getError('minlength')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:Summary, detail: minlenthForPassError
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+          </ng-container>
+    </div>
+    <div class="rePassword">
+      <div class="field">
+        <label for="rePassword" i18n>rePassword: </label>
+          <input pInputText type="password" id="rePassword" formControlName="rePassword">
+      </div>
+      <ng-container *ngIf="rePassword.touched">
+            <ng-container *ngIf="rePassword.getError('required')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:Summary, detail: requiredError
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+            <ng-container *ngIf="rePassword.getError('minlength')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:Summary, detail: minlenthForPassError
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+            <ng-container *ngIf="rePassword.getError('passnotmatch')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:Summary, detail: passNoMatchError
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+          </ng-container>
+    </div>
+      <p-button label="Submit" i18n-label type="Submit"/>
+    </form>
+  </div>
+    <p-toast />
+</section>
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.7)" size = "medium" color = "#064232" type = "square-jelly-box" [fullScreen] = "true"></ngx-spinner>

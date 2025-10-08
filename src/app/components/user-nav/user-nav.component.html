@@ -1,0 +1,12 @@
+<Section>
+  <nav>
+    <h1 class="logo" i18n>logo</h1>
+  <ul>
+    <li *ngFor="let nav of navs; index as i" [routerLink]="nav.name" routerLinkActive="active">
+      <i [class]="nav.icon"></i>
+      <a>{{nav.name}}</a>
+  </li>
+  </ul>
+  <span routerLink="/auth/login" (click)="logout()" i18n>logout</span>
+  </nav>
+</Section>

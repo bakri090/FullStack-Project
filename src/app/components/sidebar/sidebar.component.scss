@@ -1,0 +1,17 @@
+ul{
+  li {
+    margin: 20px 0;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    i{
+      margin:0 5px;
+    }
+    transition: all .5s;
+  }
+  margin: 0;
+  padding: 0;
+}
+li:hover {
+    background-color: #535a637f;
+  }

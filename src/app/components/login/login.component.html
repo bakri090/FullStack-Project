@@ -1,0 +1,71 @@
+<section>
+  <div class="container">
+    <h1 class="text-center uppercase" i18n>login form</h1>
+    <form [formGroup]="login" (ngSubmit)="submit()">
+      <div class="email">
+        <div class="field">
+          <label for="email" i18n>email: </label>
+          <input pInputText type="text" id="email"  formControlName="email"  pAutoFocus
+    [autofocus]="true" >
+        </div>
+        <ng-container *ngIf="email.touched">
+            <ng-container *ngIf="email.getError('required')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:Summary , detail: requiredError
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+            <ng-container *ngIf="email.getError('email')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:Summary, detail: EmailError
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+          </ng-container>
+      </div>
+    <div class="password">
+      <div class="field">
+        <label for="password" i18n>password: </label>
+          <input pInputText type="password" id="password" [autofocus]="true" (focus)="true" formControlName="password">
+      </div>
+      <ng-container *ngIf="password.touched">
+            <ng-container *ngIf="password.getError('required')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:Summary , detail: requiredError
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+            <ng-container *ngIf="password.getError('minlength')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:Summary, detail: minlenthForPassError
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+          </ng-container>
+    </div>
+      <p-button label="Submit" i18n-label class="w-full" type="Submit"/>
+    </form>
+  </div>
+    <p-toast />
+  </section>
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.7)" size = "medium" color = "#064232" type = "square-jelly-box" [fullScreen] = "true"></ngx-spinner>

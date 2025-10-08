@@ -1,0 +1,10 @@
+<nav>
+  <h1 routerLink="login" i18n>Alty</h1>
+  <ul>
+    <li *ngFor="let nav of navs; index as i;">
+      <i [class]="nav.icon"></i>
+      <a  [routerLink]="nav.name" routerLinkActive="active">{{nav.name}}
+      </a>
+    </li>
+  </ul>
+</nav>

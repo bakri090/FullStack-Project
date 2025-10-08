@@ -1,0 +1,156 @@
+<section>
+  <div class="container ">
+    <h1 class="text-center uppercase">Edit form</h1>
+    <form [formGroup]="register"
+    class=""
+    (ngSubmit)="submit()">
+      <div class="firstName bg-primary">
+        <div class="field mx-8">
+          <label for="firstName">first name:</label>
+          <input pInputText type="text" id="firstName" [autofocus]="true" pAutoFocus  formControlName="firstName">
+        </div>
+          <ng-container *ngIf="firstName.touched">
+            <ng-container *ngIf="firstName.getError('required')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:'validation error', detail: 'firstName is required'
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+            <ng-container *ngIf="firstName.getError('minlength')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error', summary:'validation error', detail: 'must be at least 3 chars'
+                }
+              ]"
+              [enableService]="false"
+              [closable]="true" />
+            </ng-container>
+            <ng-container *ngIf="firstName.getError('pattern')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:'validation error', detail: 'chars only'
+                }
+              ]"
+              [enableService]="false"
+              [closable]="true" />
+            </ng-container>
+          </ng-container>
+      </div>
+      <div class="lastName">
+        <div class="field">
+          <label for="lastName">last name: </label>
+          <input pInputText type="text" id="lastName" formControlName="lastName">
+        </div>
+        <ng-container *ngIf="lastName.touched">
+            <ng-container *ngIf="lastName.getError('required')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:'validation error', detail: 'lastName is required'
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+            <ng-container *ngIf="lastName.getError('minlength')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:'validation error', detail: 'must be at least 3 chars'
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+            <ng-container *ngIf="lastName.getError('pattern')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:'validation error', detail: 'chars only'
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+          </ng-container>
+      </div>
+      <div class="userName">
+      <div class="field">
+        <label for="userName">user name: </label>
+        <input pInputText type="text"  id="userName" formControlName="userName">
+      </div>
+      <ng-container *ngIf="userName.touched">
+            <ng-container *ngIf="userName.getError('required')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:'validation error', detail: 'userName is required'
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+            <ng-container *ngIf="userName.getError('minlength')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:'validation error', detail: 'must be at least 3 chars'
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+          </ng-container>
+    </div>
+
+      <div class="phoneNumber">
+      <div class="field">
+        <label for="phoneNumber">phone Number: </label>
+        <input pInputText type="text"  id="phoneNumber" formControlName="phoneNumber">
+      </div>
+      <ng-container *ngIf="phoneNumber.touched">
+            <ng-container *ngIf="phoneNumber.getError('required')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:'validation error', detail: 'phoneNumber is required'
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+            <ng-container *ngIf="phoneNumber.getError('pattern')">
+              <p-messages
+              [value]="[
+                {
+                  severity: 'error',
+                  summary:'validation error', detail: 'must be numbers'
+                }
+              ]"
+              [enableService]="false"
+              [closable]="false" />
+            </ng-container>
+          </ng-container>
+    </div>
+    <p-button label="Go Back" routerLink="/user/users" severity="warning" />
+      <p-button label="Submit" type="Submit" class="mx-4"/>
+    </form>
+  </div>
+    <p-toast />
+</section>
+<h1>{{register.value|json}} hi</h1>
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.7)" size = "medium" color = "#064232" type = "square-jelly-box" [fullScreen] = "true"></ngx-spinner>

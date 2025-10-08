@@ -1,0 +1,26 @@
+.field{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.field label{
+  flex: 1;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.field input {
+  flex: 3;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+.field  input {
+  width: 100%;
+  border-color: rgba(128, 128, 128, 0.307);
+}
+.danger {
+  border: 1px solid red;
+}
+.field input:hover {
+  border-color:  rgb(25, 120, 236);
+}
