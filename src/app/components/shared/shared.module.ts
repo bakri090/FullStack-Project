@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { AutoFocusModule } from 'primeng/autofocus';
 import { ButtonModule } from 'primeng/button';
@@ -25,18 +26,11 @@ import { ToastModule } from 'primeng/toast';
     AutoFocusModule,
     InputTextModule,
     TableModule,
-    HttpClientModule
+    HttpClientModule,
+    TranslateModule
   ],
   exports:[
-    ReactiveFormsModule,
-    ButtonModule,
-    MessagesModule,
-    ToastModule,
-    NgxSpinnerModule,
-    RouterModule,
-    AutoFocusModule,
-    InputTextModule,
-    TableModule,
+    TranslateModule
   ]
 })
 export class SharedModule { }

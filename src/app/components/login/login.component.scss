@@ -26,6 +26,8 @@
 .field input:hover {
   border-color:  rgb(25, 120, 236);
 }
-.p-button{
-  width: 1000px;
+.p-element.p-button {
+  display: block;
+  width: 70%;
+  margin: auto;
 }

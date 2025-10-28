@@ -1,10 +1,10 @@
-<section>
+<section [dir]="dir">
   <div class="container">
-    <h1 class="text-center uppercase" i18n>login form</h1>
-    <form [formGroup]="login" (ngSubmit)="submit()">
+    <h1 class="text-center uppercase" >{{"auth.login.title" | translate}}</h1>
+    <form [formGroup]="login" #frm (ngSubmit)="submit()">
       <div class="email">
         <div class="field">
-          <label for="email" i18n>email: </label>
+          <label for="email" >{{'auth.login.email' |  translate}} </label>
           <input pInputText type="text" id="email"  formControlName="email"  pAutoFocus
     [autofocus]="true" >
         </div>
@@ -35,7 +35,7 @@
       </div>
     <div class="password">
       <div class="field">
-        <label for="password" i18n>password: </label>
+        <label for="password" > {{'auth.login.password' | translate}}</label>
           <input pInputText type="password" id="password" [autofocus]="true" (focus)="true" formControlName="password">
       </div>
       <ng-container *ngIf="password.touched">
@@ -63,7 +63,7 @@
             </ng-container>
           </ng-container>
     </div>
-      <p-button label="Submit" i18n-label class="w-full" type="Submit"/>
+      <p-button  [label]="'btn.Submit' | translate"   type="Submit"/>
     </form>
   </div>
     <p-toast />

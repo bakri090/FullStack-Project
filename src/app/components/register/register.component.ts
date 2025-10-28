@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { AbstractControl, FormControl, FormGroup, ValidatorFn, Validators } from '@angular/forms';
 import { IRegister } from 'src/app/core/interfaces/IhttpService';
 import { AuthService} from 'src/app/core/services/auth.service';
@@ -6,18 +6,48 @@ import { MessageService } from 'primeng/api';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { Router } from '@angular/router';
 import { ErrorMessageService } from 'src/app/core/services/error-message.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss']
+  styleUrls: ['./register.component.scss'],
+  encapsulation:ViewEncapsulation.None
 })
 export class RegisterComponent {
 constructor(private _http:AuthService, private messageService: MessageService,
-  private spinner: NgxSpinnerService, private _router : Router, private _errorMsg:ErrorMessageService
+  private spinner: NgxSpinnerService, private _router : Router,
+  private _errorMsg:ErrorMessageService, private translate:TranslateService
 ){
+  if(localStorage.getItem('lang') == 'ar')
+    this.dir = 'rtl';
+  else
+    this.dir = 'ltr';
   this.initFormControl();
   this.initFormGroup();
+  translate.get('erorrs.Summary').subscribe((er) => {
+    console.log(er)
+    this.Summary = er;
+  });
+  translate.get('erorrs.minlenthError').subscribe(er => {
+    this.minlenthError = er;
+  });
+  translate.get('erorrs.minlenthForPassError').subscribe(er =>{
+    this.minlenthForPassError = er;
+    console.log(er);
+  });
+  translate.get('erorrs.requiredError').subscribe(er => {
+    this.requiredError = er;
+  })
+  translate.get('erorrs.passNoMatchError').subscribe(er => {
+    this.passNoMatchError = er;
+  });
+  translate.get('erorrs.charsOnly').subscribe(er => {
+    this.charsOnly = er;
+  })
+  translate.get('erorrs.emailError').subscribe(er => {
+    this.EmailError =er;
+  })
 }
 
 
@@ -30,13 +60,15 @@ constructor(private _http:AuthService, private messageService: MessageService,
   password!:FormControl;
   rePassword!:FormControl;
 
-  Summary= this._errorMsg.Summary;
-  minlenthError= this._errorMsg.minlenthError;
-  minlenthForPassError= this._errorMsg.minlenthForPassError;
-  requiredError = this._errorMsg.requiredError;
-  passNoMatchError = this._errorMsg.passNoMatchError;
-  EmailError = this._errorMsg.EmailError;
-  charsOnly = this._errorMsg.charsOnly;
+  Summary!:string;
+  minlenthError!:string;
+  minlenthForPassError!:string;
+  requiredError!:string;
+  passNoMatchError!:string;
+  EmailError!:string;
+  charsOnly!:string;
+
+  dir!:string;
 
   initFormControl(){
     this.firstName = new FormControl("",[

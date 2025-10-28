@@ -1,4 +1,4 @@
-import { importProvidersFrom, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,7 +13,11 @@ import { UserLayoutModule } from './layouts/user-layout/user-layout-module.modul
 import { FooterComponent } from './layouts/footer-layout/footer.component';
 import { TestComponent } from './components/test/test.component';
 import { SharedModule } from './components/shared/shared.module';
-
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { HTTP_INTERCEPTORS, HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { AuthInterceptor } from './core/interceptors/auth.interceptor';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 
 export function tokenGetter(){
   return localStorage.getItem('token');
@@ -24,10 +28,17 @@ export function tokenGetter(){
     AppComponent,
     NotFoundComponent,
     FooterComponent,
-    TestComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
+      TranslateModule.forRoot({
+        loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+        }
+      }),
     BrowserAnimationsModule,
     AppRoutingModule,
     AuthLayoutModule,
@@ -42,13 +53,19 @@ export function tokenGetter(){
     SharedModule
   ],
   exports:[
+    TranslateModule
   ],
   providers: [
-    importProvidersFrom(),
+    provideHttpClient(withInterceptorsFromDi()),
     MessageService,
-    authGuard
+    authGuard,
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
   ],
   bootstrap: [AppComponent]
 })
 
 export class AppModule { }
+// required for AOT compilation
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}

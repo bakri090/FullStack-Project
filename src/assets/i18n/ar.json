@@ -1,0 +1,48 @@
+{
+  "auth":{
+    "logo": "ألتي",
+    "login":{
+      "login":"تسجيل الدخول",
+      "register":"اضافة مستخدم",
+      "title":"تسجيل الدخول",
+      "email":"ايميل :",
+      "password":"كلمة السر :"
+    },
+    "register":{
+      "register":"اضافة مستخدم",
+      "firstName" :"الاسم الاول :",
+      "lastName": "الاسم الاخير :",
+      "email": "الايميل :",
+      "userName":"اسم المستخدم",
+      "password":"كلمة السر :",
+      "rePassword":"اعد كلمة السر :"
+    }
+  },
+  "user":{
+    "nav":{
+      "logo" :"ألتي",
+      "home":"الصفحة الرئيسية",
+      "users":"المستخدمين"
+    },
+    "home":{
+      "welcome":"مرحباً {{userName}}، أهلاً بك في منزلك!"
+    },
+    "profile":{
+      "h1":"نأسف هنالك مشكله في السيرفير"
+    },
+    "logout":"تسجيل الخروج"
+  },
+    "erorrs":{
+    "Summary": "   'رسالة خطأ   ' : ",
+    "minlenthError":"اقل عدد للحروف هو ثلاثة أحرف ",
+    "minlenthForPassError":"أقل عدد للحروف هو أربعة أحرف",
+    "requiredError":"هذا الحقل مطلوب",
+    "passNoMatchError":"كلمات السر ليست متساوية",
+    "charsOnly":"حروف فقط",
+    "emailError":"الايميل غير صحيح "
+  },
+  "btn":{
+    "Submit":"أرسال"
+  },
+  "footer":"صممت بواسطة ابوبكر"
+}

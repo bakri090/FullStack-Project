@@ -1,0 +1,39 @@
+:root {
+  --primary-color: #1E3A8A;
+  --secondary-color: #64748B;
+  --background-color: #F5F5F7;
+  --card-bg: #FFFFFF;
+  --text-dark: #111827;
+  --text-light: #6B7280;
+  --button-bg: #2563EB;
+}
+
+/* مثال */
+body {
+  background-color: var(--background-color);
+  color: var(--text-dark);
+}
+
+.p-card {
+  background: var(--card-bg);
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.p-button {
+  background-color: var(--button-bg);
+  border: none;
+}
+
+.p-button:hover {
+  background-color: #1D4ED8;
+}
+
+:host ::ng-deep .p-card {
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+:host ::ng-deep .p-card:hover {
+  transform: translateY(-5px);
+}

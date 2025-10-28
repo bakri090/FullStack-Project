@@ -10,7 +10,6 @@
     "i18n": "ng extract-i18n --output-path src/locale && xliffmerge --profile xliffmerge.json"
   },
   "private": true,
-
   "dependencies": {
     "@angular/animations": "^16.2.0",
     "@angular/common": "^16.2.0",
@@ -21,7 +20,10 @@
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
     "@auth0/angular-jwt": "^5.2.0",
+    "@colsen1991/ngx-translate-extract-marker": "^3.0.1",
     "@fortawesome/fontawesome-free": "^7.0.1",
+    "@ngx-translate/core": "^15.0.0",
+    "@ngx-translate/http-loader": "^8.0.0",
     "ngx-spinner": "^17.0.0",
     "primeflex": "^4.0.0",
     "primeicons": "^7.0.0",

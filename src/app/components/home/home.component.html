@@ -1,1 +1,61 @@
-<h1 i18n>hi {{userName}} welcome in your home</h1>
+<main >
+<div class="p-4 surface-100 min-h-screen">
+  <!-- الترحيب -->
+  <div class="text-center mb-5">
+    <h2 class="text-3xl font-bold text-primary">
+      مرحباً {{ userName }} 👋
+    </h2>
+    <p class="text-lg mt-2">اكتشف أحدث الشقق والعروض المميزة لدينا!</p>
+  </div>
+
+  <!-- قسم الشقق المقترحة -->
+  <div class="mb-6">
+    <h3 class="text-2xl font-semibold mb-3 text-right">🏠 الشقق المقترحة</h3>
+    <div class="grid grid-nogutter gap-3">
+      <div *ngFor="let apt of apartments" class="col-12 md:col-4">
+        <p-card [header]="apt.title" [subheader]="apt.location" styleClass="h-full">
+          <!-- <img [src]="apt.image" alt="apartment" class="w-full h-12rem border-round mb-2" /> -->
+          <p class="text-lg font-bold text-primary">{{ apt.price }} ريال / شهر</p>
+          <button pButton label="عرض التفاصيل" class="p-button-sm p-button-outlined p-button-secondary mt-2 w-full"></button>
+        </p-card>
+      </div>
+    </div>
+  </div>
+
+  <!-- العروض المميزة -->
+  <div class="mb-6">
+  <h3 class="text-2xl font-semibold mb-3 text-right">🔥 العروض المميزة</h3>
+
+  <p-carousel
+    [value]="offers"
+    [circular]="true"
+    [autoplayInterval]="3000"
+    [showIndicators]="true"
+    [showNavigators]="true">
+
+    <ng-template pTemplate="item" let-offer>
+      <p-card styleClass="text-center h-full">
+        <!-- <img [src]="offer.image" alt="offer" class="w-full h-12rem border-round mb-3 object-cover" /> -->
+        <h4 class="text-lg font-bold mb-2">{{ offer.title }}</h4>
+        <p>{{ offer.description }}</p>
+      </p-card>
+    </ng-template>
+  </p-carousel>
+</div>
+
+
+  <!-- الخدمات -->
+  <div class="text-center mt-6">
+    <h3 class="text-2xl font-semibold mb-4">💡 خدماتنا</h3>
+    <div class="grid gap-3 justify-content-center">
+      <div class="col-12 md:col-3" *ngFor="let service of services">
+        <p-card [header]="service.title" styleClass="h-full text-center">
+          <i [class]="service.icon + ' text-4xl text-primary mb-3'"></i>
+          <p>{{ service.description }}</p>
+        </p-card>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>

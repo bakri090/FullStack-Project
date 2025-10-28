@@ -1,12 +1,17 @@
-<Section>
-  <nav>
-    <h1 class="logo" i18n>logo</h1>
+<Section [dir]="dir">
+  <nav class="">
+    <h1 class="logo" >{{'user.nav.logo'|translate}}</h1>
   <ul>
-    <li *ngFor="let nav of navs; index as i" [routerLink]="nav.name" routerLinkActive="active">
-      <i [class]="nav.icon"></i>
-      <a>{{nav.name}}</a>
+    <li *ngFor="let nav of navs; index as i"
+    style="text-align: center;">
+      <a [routerLink]="nav.name" routerLinkActive="active" class=" flex flex-column justify-content-center">
+      <i class="mb-3" [class]="nav.icon"></i> {{nav.name}}</a>
   </li>
   </ul>
-  <span routerLink="/auth/login" (click)="logout()" i18n>logout</span>
+  <div class="global">
+    <img [src]="profileImg" alt="" srcset="" class="user-avatar">
+    <span  (click)="ChangeLang()">{{lang == 'en' ? 'عربي' : 'English'}}</span>
+    <span  routerLink="/auth/login" (click)="logout()">{{'user.logout'|translate}}</span>
+  </div>
   </nav>
 </Section>

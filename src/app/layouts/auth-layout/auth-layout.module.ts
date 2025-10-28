@@ -13,8 +13,9 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { AutoFocusModule } from 'primeng/autofocus';
 import { InputTextModule } from 'primeng/inputtext';
 import { TableModule } from 'primeng/table';
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CommonModule } from '@angular/common';
+import { SharedModule } from 'src/app/components/shared/shared.module';
+
 const routes: Routes = [
   {
     path: '',
@@ -46,7 +47,8 @@ const routes: Routes = [
     NgxSpinnerModule,
     AutoFocusModule,
     InputTextModule,
-    TableModule
+    TableModule,
+    SharedModule
 ],
 exports:[
 RouterModule

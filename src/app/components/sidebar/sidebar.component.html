@@ -1,6 +1,8 @@
-<ul>
-    <li *ngFor="let nav of navs; index as i" [routerLink]="nav.name" routerLinkActive="active">
-      <i [class]="nav.icon"></i>
-      <a>{{nav.name}}</a>
+<ul >
+    <li *ngFor="let nav of navs; index as i" >
+      <a [routerLink]="nav.name" routerLinkActive="active">
+        <i [class]="nav.icon"></i>
+        {{nav.name}}
+      </a>
   </li>
 </ul>

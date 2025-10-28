@@ -16,11 +16,12 @@ export class authGuard implements CanActivate {
 
     if(token && !this._jwt.isTokenExpired(token) && isAuthentecated)
       return true
-
-    localStorage.removeItem('username')
-    localStorage.removeItem('token')
-    localStorage.removeItem('roles')
-    return this.route.createUrlTree(['auth/login'])
+    else{
+      localStorage.removeItem('username')
+      localStorage.removeItem('token')
+      localStorage.removeItem('roles')
+      return this.route.createUrlTree(['ar/auth/login'])
+    }
   }
 
   // let router = inject(Router);

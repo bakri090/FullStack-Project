@@ -4,15 +4,6 @@
   "newProjectRoot": "projects",
   "projects": {
     "Alty": {
-      "i18n": {
-        "sourceLocale":"en-US",
-        "locales": {
-          "ar-AE":{
-            "translation":"src/locale/messages.ar.xlf",
-            "baseHref": "ar-AE/"
-          }
-        }
-      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -27,9 +18,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "localize":[
-              "ar-AE"
-            ],
             "outputPath": "dist/alty",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -59,8 +47,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "3mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -92,12 +80,6 @@
             }
           },
           "defaultConfiguration": "development"
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "Alty:build"
-          }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",

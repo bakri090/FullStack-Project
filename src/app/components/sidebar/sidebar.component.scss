@@ -14,4 +14,16 @@ ul{
 }
 li:hover {
     background-color: #535a637f;
+    border: 1px solid #DFD0B8;
+    border-radius: 10px;
   }
+  a{
+    padding:  10px;
+    color: #DFD0B8;
+  }
+.active{
+  color: #ddd;
+  // background-color: #333;
+  border-right: 1px solid #DFD0B8;
+  border-left: 1px solid #DFD0B8;
+}

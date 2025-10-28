@@ -1,17 +1,27 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { authGuard } from './core/guard/auth.guard';
-import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'user/home', pathMatch: 'full' },
   {
-    path: 'auth',
+    path: `auth`,
     title:'auth',
     loadChildren: () =>
       import('./layouts/auth-layout/auth-layout.module').then(
         (m) => m.AuthLayoutModule
       )
+  },{
+    path: `auth/اضافة مستخدم`,
+    title:'auth',
+    redirectTo: 'auth/register',
+    pathMatch:'full'
+  },
+  {
+    path: `auth/تسجيل الدخول`,
+    title:'auth',
+    redirectTo: 'auth/login',
+    pathMatch:'full'
   },
   {
     path: 'user',
@@ -22,7 +32,6 @@ const routes: Routes = [
       ),
     canActivate: [authGuard]
   },
-  { path: '**', component: NotFoundComponent, title: 'no found' }
 ];
 
 

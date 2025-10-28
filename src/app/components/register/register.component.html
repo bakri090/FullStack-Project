@@ -1,10 +1,10 @@
-<section>
+<section [dir]="dir">
   <div class="container">
-    <h1 class="text-center uppercase" i18n>register form</h1>
+    <h1 class="text-center uppercase" >{{'auth.register.register'| translate}}</h1>
     <form [formGroup]="register" (ngSubmit)="submit()">
       <div class="firstName">
         <div class="field">
-          <label for="firstName" i18n>first name: </label>
+          <label for="firstName" >{{'auth.register.firstName' |translate}}</label>
           <input pInputText type="text" id="firstName" [autofocus]="true" pAutoFocus  formControlName="firstName">
         </div>
           <ng-container *ngIf="firstName.touched">
@@ -45,7 +45,7 @@
       </div>
       <div class="lastName">
         <div class="field">
-          <label for="lastName" i18n>last name: </label>
+          <label for="lastName" >{{'auth.register.lastName' |translate}}</label>
           <input pInputText type="text" id="lastName" formControlName="lastName">
         </div>
         <ng-container *ngIf="lastName.touched">
@@ -86,7 +86,7 @@
       </div>
       <div class="email">
         <div class="field">
-          <label for="email" i18n>email: </label>
+          <label for="email" >{{'auth.register.email' |translate}}</label>
           <input pInputText type="text" id="email" formControlName="email">
         </div>
         <ng-container *ngIf="email.touched">
@@ -116,7 +116,7 @@
       </div>
       <div class="userName">
       <div class="field">
-        <label for="userName" i18n>user name: </label>
+        <label for="userName" >{{'auth.register.userName' |translate}}</label>
         <input pInputText type="text"  id="userName"  formControlName="userName">
       </div>
       <ng-container *ngIf="userName.touched">
@@ -146,7 +146,7 @@
     </div>
     <div class="password">
       <div class="field">
-        <label for="password" i18n>password: </label>
+        <label for="password" >{{'auth.register.password' |translate}}</label>
           <input pInputText type="password" id="password" formControlName="password">
       </div>
       <ng-container *ngIf="password.touched">
@@ -176,7 +176,7 @@
     </div>
     <div class="rePassword">
       <div class="field">
-        <label for="rePassword" i18n>rePassword: </label>
+        <label for="rePassword" >{{'auth.register.rePassword' |translate}}</label>
           <input pInputText type="password" id="rePassword" formControlName="rePassword">
       </div>
       <ng-container *ngIf="rePassword.touched">
@@ -215,7 +215,7 @@
             </ng-container>
           </ng-container>
     </div>
-      <p-button label="Submit" i18n-label type="Submit"/>
+      <p-button  [label]="'btn.Submit' | translate" type="Submit"/>
     </form>
   </div>
     <p-toast />

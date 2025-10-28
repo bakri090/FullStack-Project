@@ -1,0 +1,48 @@
+{
+  "auth":{
+    "logo": "Alty",
+    "login":{
+      "login":"Login",
+      "register":"Register",
+      "title":"login form",
+      "email":"Email :",
+      "password":"Password :"
+    },
+    "register":{
+      "register":"register",
+      "firstName" :"first name :",
+      "lastName": "last name :",
+      "email": "email :",
+      "userName":"user name :",
+      "password":"password :",
+      "rePassword":"rePassword :"
+    }
+  },
+  "user":{
+    "nav":{
+      "logo" :"Alty",
+      "home":"Home",
+      "users":"Users"
+    },
+    "home":{
+      "welcome": "Hi {{userName}}, welcome to your home!"
+    },
+    "profile":{
+      "h1":"Sorry server is broken"
+    },
+    "logout":"تسجيل الخروج"
+  },
+  "erorrs":{
+    "Summary": "validation error",
+    "minlenthError":"must be at least 3 chars",
+    "minlenthForPassError":"must be at least 4 chars",
+    "requiredError":"this field is required",
+    "passNoMatchError":"rePassword not match password",
+    "charsOnly":"email not valid",
+    "emailError":"chars only"
+  },
+  "btn":{
+    "Submit":"Submit"
+  },
+  "footer":"Designed by abubaker"
+}

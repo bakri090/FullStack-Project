@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { AuthService } from 'src/app/core/services/auth.service';
 
 @Component({
@@ -7,17 +8,19 @@ import { AuthService } from 'src/app/core/services/auth.service';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent {
- constructor(private _http:AuthService){}
+ constructor(private _http:AuthService,private translate:TranslateService){}
 navs: {name:string,icon:string}[] =[
-  {name:$localize`home`, icon:'fa-solid fa-house-user'}
 ]
 ngOnInit(): void {
-  this.isAdmin();
-}
-isAdmin(){
-  if(this._http.isAdmin()){
+  this.translate.get('user.nav.home').subscribe((home) => {
+    this.navs.push( {name:home, icon:'fa-solid fa-house-user'})
+  });
+
+    if(this._http.isAdmin()){
+  this.translate.get('user.nav.users').subscribe((users) => {
     this.navs.push(
-    { name:$localize`users`,icon:'fa-solid fa-users'});
+    { name:users,icon:'fa-solid fa-users'});
+    });
   }
 }
 }

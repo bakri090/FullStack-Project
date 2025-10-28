@@ -1,12 +1,6 @@
-// .userLayout{
-//   display: flex;
-//   flex-direction: column;
-//   min-height: 100vh;
-// }
-// aside{
-//   background-color: #000;
-//   height: inherit;
-// }
+.main{
+
+}
 .container {
     display: grid;
     grid-template-areas: "aside main";
@@ -17,15 +11,14 @@
 }
 
 nav {
-    grid-area: nav;
-    color: white;
-    padding: 1rem;
+  grid-area: nav;
+  margin-bottom: 5px;
 }
 
 aside {
     grid-area: aside;
     background: #393E46;
-    padding: 1rem;
+    width: 90%;
     color: #DFD0B8;
     min-height: inherit;
     border-radius: 10px;
