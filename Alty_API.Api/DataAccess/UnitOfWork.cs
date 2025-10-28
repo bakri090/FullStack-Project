@@ -1,24 +1,23 @@
 ﻿using Core;
 using Core.Entities;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccess;
 public class UnitOfWork : IUnitOfWork
 {
 	private readonly AppDbContext _dbContext;
+	private readonly UserManager<ApplicationUser> _userManager;
+	private readonly IWebHostEnvironment _webHost;
 
 	public IUserRepository Users { get; private set; }
-	private readonly UserManager<ApplicationUser> _userManager;
-	public UnitOfWork(AppDbContext dbContext, UserManager<ApplicationUser> userManager)
+
+	public UnitOfWork(AppDbContext dbContext, UserManager<ApplicationUser> userManager,IWebHostEnvironment webHost)
 	{
 		_dbContext = dbContext;
 		_userManager = userManager;
-		Users = new UserRepository(dbContext,userManager);
+		_webHost = webHost;
+		Users = new UserRepository(dbContext,userManager,webHost);
 	}
 	public int Complete()
 	{

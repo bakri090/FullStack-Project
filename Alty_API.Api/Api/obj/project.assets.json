@@ -7918,11 +7918,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Api\\Api.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Api\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Api\\Api.csproj",
+      "projectPath": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Api\\Api.csproj",
       "packagesPath": "C:\\Users\\Lenovo_M\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Api\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7945,11 +7945,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Core\\Core.csproj"
+            "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\Core.csproj"
             },
-            "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\DataAccess\\DataAccess.csproj"
             }
           }
         }
@@ -8008,7 +8008,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

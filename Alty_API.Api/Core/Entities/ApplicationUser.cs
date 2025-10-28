@@ -8,5 +8,7 @@ public class ApplicationUser : IdentityUser
 	public string FirstName { get; set; } = string.Empty;
 	[Required,StringLength(50)]
 	public string LastName { get; set; } = string.Empty;
+	[StringLength(100)]
+	public string? ProfileImageUrl { get; set; }
 
 }

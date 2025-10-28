@@ -1,0 +1,7 @@
+wwwroot\uploads\bg_1.jpg
+wwwroot\uploads\bg_1.png
+wwwroot\uploads\bg_2.png
+wwwroot\uploads\image_3.jpg
+wwwroot\uploads\person_3.jpg
+wwwroot\uploads\staff-1.jpg
+wwwroot\uploads\staff-4.jpg

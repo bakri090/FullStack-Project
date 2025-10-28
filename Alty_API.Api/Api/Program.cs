@@ -1,16 +1,17 @@
 using Api;
 using Api.Helpers;
 using Api.Services;
+using Core;
 using Core.Entities;
+using Core.Interfaces;
 using Core.IServices;
 using DataAccess;
-using Core.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -93,7 +94,12 @@ app.UseCors("AllowAngular");
 
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.UseStaticFiles(new StaticFileOptions
+{
+	FileProvider = new PhysicalFileProvider(
+				Path.Combine(builder.Environment.WebRootPath, "uploads")),
+	RequestPath = "/uploads"
+});
 app.MapControllers();
 
 app.Run();

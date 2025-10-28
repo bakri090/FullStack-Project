@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\Lenovo_M\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Core\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -77,7 +77,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,46 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\",
+  "WorkspaceRootPath": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E3FAE11C-0A26-4261-A985-574F91025023}|DataAccess\\DataAccess.csproj|c:\\users\\lenovo_m\\desktop\\apipractics\\alty_api.api\\dataaccess\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3FAE11C-0A26-4261-A985-574F91025023}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|c:\\users\\lenovo_m\\desktop\\angular\\alty\\alty_api.api\\core\\responses\\userprofileresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|solutionrelative:core\\responses\\userprofileresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|c:\\users\\lenovo_m\\desktop\\apipractics\\alty_api.api\\core\\ibaserepositry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|solutionrelative:core\\ibaserepositry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3121401-19E8-472D-835C-7EEADA9A2E40}|Api\\Api.csproj|c:\\users\\lenovo_m\\desktop\\apipractics\\alty_api.api\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3121401-19E8-472D-835C-7EEADA9A2E40}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3121401-19E8-472D-835C-7EEADA9A2E40}|Api\\Api.csproj|c:\\users\\lenovo_m\\desktop\\apipractics\\alty_api.api\\api\\services\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3121401-19E8-472D-835C-7EEADA9A2E40}|Api\\Api.csproj|solutionrelative:api\\services\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3121401-19E8-472D-835C-7EEADA9A2E40}|Api\\Api.csproj|c:\\users\\lenovo_m\\desktop\\apipractics\\alty_api.api\\api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D3121401-19E8-472D-835C-7EEADA9A2E40}|Api\\Api.csproj|c:\\users\\lenovo_m\\desktop\\angular\\alty\\alty_api.api\\api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3121401-19E8-472D-835C-7EEADA9A2E40}|Api\\Api.csproj|solutionrelative:api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3FAE11C-0A26-4261-A985-574F91025023}|DataAccess\\DataAccess.csproj|c:\\users\\lenovo_m\\desktop\\apipractics\\alty_api.api\\dataaccess\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E3FAE11C-0A26-4261-A985-574F91025023}|DataAccess\\DataAccess.csproj|c:\\users\\lenovo_m\\desktop\\angular\\alty\\alty_api.api\\dataaccess\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3FAE11C-0A26-4261-A985-574F91025023}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|c:\\users\\lenovo_m\\desktop\\apipractics\\alty_api.api\\core\\iservices\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|solutionrelative:core\\iservices\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|c:\\users\\lenovo_m\\desktop\\angular\\alty\\alty_api.api\\core\\requests\\userprofilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|solutionrelative:core\\requests\\userprofilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|c:\\users\\lenovo_m\\desktop\\apipractics\\alty_api.api\\core\\requests\\edituser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|solutionrelative:core\\requests\\edituser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|c:\\users\\lenovo_m\\desktop\\angular\\alty\\alty_api.api\\core\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|solutionrelative:core\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3FAE11C-0A26-4261-A985-574F91025023}|DataAccess\\DataAccess.csproj|c:\\users\\lenovo_m\\desktop\\apipractics\\alty_api.api\\dataaccess\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3FAE11C-0A26-4261-A985-574F91025023}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|c:\\users\\lenovo_m\\desktop\\angular\\alty\\alty_api.api\\core\\entities\\uploadfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|solutionrelative:core\\entities\\uploadfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|c:\\users\\lenovo_m\\desktop\\apipractics\\alty_api.api\\core\\helpers\\consts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|solutionrelative:core\\helpers\\consts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3121401-19E8-472D-835C-7EEADA9A2E40}|Api\\Api.csproj|c:\\users\\lenovo_m\\desktop\\angular\\alty\\alty_api.api\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3121401-19E8-472D-835C-7EEADA9A2E40}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|c:\\users\\lenovo_m\\desktop\\angular\\alty\\alty_api.api\\core\\ibaserepositry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|solutionrelative:core\\ibaserepositry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|c:\\users\\lenovo_m\\desktop\\angular\\alty\\alty_api.api\\core\\requests\\uploadfilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|solutionrelative:core\\requests\\uploadfilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|c:\\users\\lenovo_m\\desktop\\angular\\alty\\alty_api.api\\core\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C5B4BC-0DD5-4829-95ED-70700AFE327A}|Core\\Core.csproj|solutionrelative:core\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,127 +62,125 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\DataAccess\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "DataAccess\\BaseRepository.cs",
-              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\DataAccess\\BaseRepository.cs",
-              "RelativeToolTip": "DataAccess\\BaseRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UserProfileRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\Requests\\UserProfileRequest.cs",
+              "RelativeDocumentMoniker": "Core\\Requests\\UserProfileRequest.cs",
+              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\Requests\\UserProfileRequest.cs",
+              "RelativeToolTip": "Core\\Requests\\UserProfileRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T17:32:56.483Z",
+              "WhenOpened": "2025-10-18T10:49:49.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserProfileResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\Responses\\UserProfileResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Responses\\UserProfileResponse.cs",
+              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\Responses\\UserProfileResponse.cs",
+              "RelativeToolTip": "Core\\Responses\\UserProfileResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T10:44:31.363Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IBaseRepositry.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Core\\IBaseRepositry.cs",
-              "RelativeDocumentMoniker": "Core\\IBaseRepositry.cs",
-              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Core\\IBaseRepositry.cs",
-              "RelativeToolTip": "Core\\IBaseRepositry.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAADwvw0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T17:28:16.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Api\\Controllers\\UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Api\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Api\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Api\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Api\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Api\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwAsAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAewFMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T18:11:18.882Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\DataAccess\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "DataAccess\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\DataAccess\\UnitOfWork.cs",
-              "RelativeToolTip": "DataAccess\\UnitOfWork.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T18:07:47.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EditUser.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Core\\Requests\\EditUser.cs",
-              "RelativeDocumentMoniker": "Core\\Requests\\EditUser.cs",
-              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Core\\Requests\\EditUser.cs",
-              "RelativeToolTip": "Core\\Requests\\EditUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T17:29:52.146Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Auth.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Api\\Services\\Auth.cs",
-              "RelativeDocumentMoniker": "Api\\Services\\Auth.cs",
-              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Api\\Services\\Auth.cs",
-              "RelativeToolTip": "Api\\Services\\Auth.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAzwHEAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T10:30:02.327Z",
+              "WhenOpened": "2025-10-14T15:50:25.363Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IAuth.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Core\\IServices\\IAuth.cs",
-              "RelativeDocumentMoniker": "Core\\IServices\\IAuth.cs",
-              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Core\\IServices\\IAuth.cs",
-              "RelativeToolTip": "Core\\IServices\\IAuth.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T16:09:30.087Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Api\\Program.cs",
-              "RelativeDocumentMoniker": "Api\\Program.cs",
-              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Api\\Program.cs",
-              "RelativeToolTip": "Api\\Program.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAUwFcAAAAAAAAAAAAAAA==",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\DataAccess\\UserRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\DataAccess\\UserRepository.cs",
+              "RelativeToolTip": "DataAccess\\UserRepository.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAADwv0wAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T14:43:21.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T15:36:49.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Core\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\IUserRepository.cs",
+              "RelativeToolTip": "Core\\IUserRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAswAwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T15:35:21.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Api\\Program.cs",
+              "RelativeDocumentMoniker": "Api\\Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Api\\Program.cs",
+              "RelativeToolTip": "Api\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAD4vxkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T14:43:21.112Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\DataAccess\\UserRepository.cs",
-              "RelativeDocumentMoniker": "DataAccess\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\DataAccess\\UserRepository.cs",
-              "RelativeToolTip": "DataAccess\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAABNAAAAAAAAAA==",
+              "Title": "UploadFile.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\Entities\\UploadFile.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\UploadFile.cs",
+              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\Entities\\UploadFile.cs",
+              "RelativeToolTip": "Core\\Entities\\UploadFile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T14:23:52.978Z"
+              "WhenOpened": "2025-10-15T10:33:58.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IBaseRepositry.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\IBaseRepositry.cs",
+              "RelativeDocumentMoniker": "Core\\IBaseRepositry.cs",
+              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\IBaseRepositry.cs",
+              "RelativeToolTip": "Core\\IBaseRepositry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T15:33:51.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UploadFileRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\Requests\\UploadFileRequest.cs",
+              "RelativeDocumentMoniker": "Core\\Requests\\UploadFileRequest.cs",
+              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\Requests\\UploadFileRequest.cs",
+              "RelativeToolTip": "Core\\Requests\\UploadFileRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T10:16:59.009Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Consts.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Core\\Helpers\\Consts.cs",
-              "RelativeDocumentMoniker": "Core\\Helpers\\Consts.cs",
-              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\ApiPractics\\Alty_API.Api\\Core\\Helpers\\Consts.cs",
-              "RelativeToolTip": "Core\\Helpers\\Consts.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\Entities\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Lenovo_M\\Desktop\\Angular\\Alty\\Alty_API.Api\\Core\\Entities\\ApplicationUser.cs",
+              "RelativeToolTip": "Core\\Entities\\ApplicationUser.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T03:51:27.412Z"
+              "WhenOpened": "2025-10-14T15:27:25.274Z"
             }
           ]
         }
